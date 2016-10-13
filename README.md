@@ -12,4 +12,5 @@ This is the repository for our group project in Emerging Technologies. It is a g
 + JQuery
 + Go
 + MySQL
++ Macaron Framework
 
