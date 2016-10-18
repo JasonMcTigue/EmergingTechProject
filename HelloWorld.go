@@ -19,8 +19,8 @@ func main() {
 	m := macaron.Classic()
 	m.Use(macaron.Renderer())
 
-	m.Get("/bookaroom", func() string {
-		return "Book a room here!"
+	m.Get("/bookaroom", func(tx *macaron.Context) {
+		tx.HTML(200, "bookaroom")
 	})
 
 	m.Get("/reverse/:name", func(ctx *macaron.Context) {
