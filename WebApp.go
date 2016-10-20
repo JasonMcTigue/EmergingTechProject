@@ -1,6 +1,6 @@
-// Author: Ian McLoughlin
-// Date: October 6th, 2016
-// Adapted from: https://go-macaron.com
+// Author: Gary McHugh
+// Date: September 20th, 2016
+// Adapted from: https://github.com/emerging-technologies/example-webapp
 
 package main
 
