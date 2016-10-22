@@ -7,4 +7,4 @@ Below is a description of what each branch is used for:
 
 Below is a diagram of the Branching Strategy:  
 
-![Diagram](C:\Users\User\EmergingTechProject\BranchingStratDiagram.png)
+![Diagram](BranchingStratDiagram.png)
