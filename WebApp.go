@@ -19,8 +19,18 @@ func main() {
 	m := macaron.Classic()
 	m.Use(macaron.Renderer())
 
+	m.Get("/", func(tx *macaron.Context) {
+		tx.HTML(200, "head")
+		tx.HTML(200, "nav")
+		tx.HTML(200, "index")
+		tx.HTML(200, "footer")
+	})
+
 	m.Get("/bookaroom", func(tx *macaron.Context) {
+		tx.HTML(200, "head")
+		tx.HTML(200, "nav")
 		tx.HTML(200, "bookaroom")
+		tx.HTML(200, "footer")
 	})
 
 	m.Get("/reverse/:name", func(ctx *macaron.Context) {
