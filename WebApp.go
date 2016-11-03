@@ -40,6 +40,20 @@ func main() {
 		tx.HTML(200, "footer")
 	})
 
+	m.Get("/aboutUs", func(tx *macaron.Context) {
+		tx.HTML(200, "head")
+		tx.HTML(200, "nav")
+		tx.HTML(200, "aboutUs")
+		tx.HTML(200, "footer")
+	})
+
+	m.Get("/contactUs", func(tx *macaron.Context) {
+		tx.HTML(200, "head")
+		tx.HTML(200, "nav")
+		tx.HTML(200, "contactUs")
+		tx.HTML(200, "footer")
+	})
+
 	m.Get("/reverse/:name", func(ctx *macaron.Context) {
 		// Adapted from: https://go-macaron.com/docs/middlewares/templating
 		ctx.Data["Name"] = reverse(ctx.Params(":name"))
