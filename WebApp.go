@@ -54,6 +54,10 @@ func main() {
 		tx.HTML(200, "footer")
 	})
 
+	m.Get("/signIn", func(tx *macaron.Context) {
+		tx.HTML(200, "signIn")
+	})
+
 	m.Get("/reverse/:name", func(ctx *macaron.Context) {
 		// Adapted from: https://go-macaron.com/docs/middlewares/templating
 		ctx.Data["Name"] = reverse(ctx.Params(":name"))
