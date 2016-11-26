@@ -54,6 +54,55 @@ func main() {
 		tx.HTML(200, "footer")
 	})
 
+	m.Get("/booksA", func(tx *macaron.Context) {
+		tx.HTML(200, "head")
+		tx.HTML(200, "nav")
+		tx.HTML(200, "booksA")
+		tx.HTML(200, "footer")
+	})
+
+	m.Get("/booksC", func(tx *macaron.Context) {
+		tx.HTML(200, "head")
+		tx.HTML(200, "nav")
+		tx.HTML(200, "booksC")
+		tx.HTML(200, "footer")
+	})
+
+	m.Get("/BooksE", func(tx *macaron.Context) {
+		tx.HTML(200, "head")
+		tx.HTML(200, "nav")
+		tx.HTML(200, "BooksE")
+		tx.HTML(200, "footer")
+	})
+
+	m.Get("/BooksF", func(tx *macaron.Context) {
+		tx.HTML(200, "head")
+		tx.HTML(200, "nav")
+		tx.HTML(200, "BooksF")
+		tx.HTML(200, "footer")
+	})
+
+	m.Get("/BooksM", func(tx *macaron.Context) {
+		tx.HTML(200, "head")
+		tx.HTML(200, "nav")
+		tx.HTML(200, "BooksM")
+		tx.HTML(200, "footer")
+	})
+
+	m.Get("/BooksPhysics", func(tx *macaron.Context) {
+		tx.HTML(200, "head")
+		tx.HTML(200, "nav")
+		tx.HTML(200, "BooksPhysics")
+		tx.HTML(200, "footer")
+	})
+
+	m.Get("/BooksPsycol", func(tx *macaron.Context) {
+		tx.HTML(200, "head")
+		tx.HTML(200, "nav")
+		tx.HTML(200, "BooksPsycol")
+		tx.HTML(200, "footer")
+	})
+
 	m.Get("/signIn", func(tx *macaron.Context) {
 		tx.HTML(200, "signIn")
 	})
