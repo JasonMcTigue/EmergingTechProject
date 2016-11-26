@@ -103,6 +103,13 @@ func main() {
 		tx.HTML(200, "footer")
 	})
 
+	m.Get("/addBooks", func(tx *macaron.Context) {
+		tx.HTML(200, "head")
+		tx.HTML(200, "nav")
+		tx.HTML(200, "addBooks")
+		tx.HTML(200, "footer")
+	})
+
 	m.Get("/signIn", func(tx *macaron.Context) {
 		tx.HTML(200, "signIn")
 	})

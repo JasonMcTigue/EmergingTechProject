@@ -15,8 +15,8 @@
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <link href="../../assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
 
-    <!-- Custom styles for this template 
-    <link href="books.css" rel="stylesheet"> -->
+    <!-- Custom styles for this template -->
+    <link href="books.css" rel="stylesheet">
 
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
@@ -31,6 +31,23 @@
 
   <body>
 
+	  <div class="container">
+	  	<form action="sendbooks.php" method="post">
+			ISBN:<br>
+	  		<input type="text" name="ISBN" value="ISBN"><br>
+	  		Title:<br>
+	  		<input type="text" name="title" value="title"><br>
+	  		Author:<br>
+	  		<input type="text" name="author" value="author"><br>
+	  		Category:<br>
+	  		<input type="text" name="category" value="category"><br>
+	  		Copies:<br>
+	  		<input type="text" name="copies" value="copies"><br>
+	  		Loan Limit:<br>
+	  		<input type="text" name="loan_limit" value=""><br><br>
+	  		<input type="submit" value="Submit">
+	  	</form>
+	  </div>
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
