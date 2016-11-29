@@ -15,6 +15,11 @@ import (
 )
 
 func main() {
+	//use your username and password for the database here
+	//db, err := sql.Open("mysql", "username:password@tcp(127.0.0.1:3306)/Library")
+
+	//my username was: root
+	//my password was: hello
 	db, err := sql.Open("mysql", "root:hello@tcp(127.0.0.1:3306)/Library")
 	if err != nil {
 		fmt.Print(err.Error())
