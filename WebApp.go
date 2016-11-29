@@ -7,9 +7,11 @@ package main
 import "gopkg.in/macaron.v1"
 
 func main() {
+	//use macaron framework
 	m := macaron.Classic()
 	m.Use(macaron.Renderer())
 
+	// when root loads, load the following html pages
 	m.Get("/", func(tx *macaron.Context) {
 		tx.HTML(200, "head")
 		tx.HTML(200, "nav")
@@ -17,6 +19,7 @@ func main() {
 		tx.HTML(200, "footer")
 	})
 
+	//only thing that changes is the content
 	m.Get("/bookaroom", func(tx *macaron.Context) {
 		tx.HTML(200, "head")
 		tx.HTML(200, "nav")
@@ -45,6 +48,7 @@ func main() {
 		tx.HTML(200, "footer")
 	})
 
+	//used or the individual books
 	m.Get("/booksA", func(tx *macaron.Context) {
 		tx.HTML(200, "head")
 		tx.HTML(200, "nav")
@@ -94,6 +98,7 @@ func main() {
 		tx.HTML(200, "footer")
 	})
 
+	//a form to add a book to the database
 	m.Get("/addBooks", func(tx *macaron.Context) {
 		tx.HTML(200, "head")
 		tx.HTML(200, "nav")
@@ -101,6 +106,7 @@ func main() {
 		tx.HTML(200, "footer")
 	})
 
+	//load the sign in page
 	m.Get("/signIn", func(tx *macaron.Context) {
 		tx.HTML(200, "signIn")
 	})
