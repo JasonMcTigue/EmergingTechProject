@@ -35,7 +35,7 @@ func main() {
 	}
 	router := gin.Default()
 
-	// GET a person detail
+	// GET a books details
 	router.GET("/book/:isbn", func(c *gin.Context) {
 		var (
 			books  Books
@@ -59,7 +59,7 @@ func main() {
 		c.JSON(http.StatusOK, result)
 	})
 
-	// GET all persons
+	// GET all books
 	router.GET("/books", func(c *gin.Context) {
 		var (
 			books  Books
@@ -70,7 +70,6 @@ func main() {
 			fmt.Print(err.Error())
 		}
 		for rows.Next() {
-			//err = row.Scan(&books.ISBN, &books.Title, &books.Author, &books.Category, &books.Copies, &books.LoanLimit)
 			err = rows.Scan(&books.ISBN, &books.Title, &books.Author, &books.Category, &books.Copies, &books.LoanLimit)
 			bookss = append(bookss, books)
 			if err != nil {
@@ -84,7 +83,7 @@ func main() {
 		})
 	})
 
-	// POST new person details
+	// POST new book details
 	router.POST("/book", func(c *gin.Context) {
 		var buffer bytes.Buffer
 		ISBN := c.PostForm("ISBN")
@@ -122,7 +121,7 @@ func main() {
 		})
 	})
 
-	// PUT - update a person details
+	// PUT - update a books details
 	router.PUT("/book", func(c *gin.Context) {
 		var buffer bytes.Buffer
 		ISBN := c.Query("ISBN")
