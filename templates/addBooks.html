@@ -17,6 +17,8 @@
 
     <!-- Custom styles for this template -->
     <link href="books.css" rel="stylesheet">
+	
+	<link rel="stylesheet" href="css/form-register.css">
 
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
@@ -31,35 +33,75 @@
 
   <body>
 
-	  <div class="container">
-	  	<form action="sendbooks.php" method="post">
-			<p>
-				<label for="ISBN">ISBN:</label>
-				<input type="text" name="ISBN" id="ISBN">
-			</p>
-			<p>
-				<label for="title">Title:</label>
-				<input type="text" name="title" id="title">
-			</p>
-			<p>
-				<label for="author">Author:</label>
-				<input type="text" name="author" id="author">
-			</p>
-			<p>
-				<label for="category">Category:</label>
-				<input type="text" name="category" id="category">
-			</p>
-			<p>
-				<label for="copies">Copies:</label>
-				<input type="text" name="copies" id="copies">
-			</p>
-			<p>
-				<label for="loan_limit">LoanLimit:</label>
-				<input type="text" name="loan_limit" id="loan_limit">
-			</p>
-	  		<input type="submit" value="Submit">
-	  	</form>
-	  </div>
+	  <div class="main-content">
+
+			<!-- You only need this form and the form-register.css -->
+
+			<form class="form-register" method="post" action="sendbooks.php">
+			<br /><br /><br /><br />
+
+				<div class="form-register-with-email">
+
+					<div class="form-white-background">
+
+						<div class="form-title-row">
+							<h1>Add Books</h1>
+						</div>
+
+						<div class="form-row">
+							<label>
+								<span>ISBN:</span>
+								<input type="text" name="isbn">
+							</label>
+						</div>
+				
+						<div class="form-row">
+							<label>
+								<span>Title:</span>
+								<input type="text" name="title">
+							</label>
+						</div>
+						
+						<div class="form-row">
+							<label>
+								<span>Author:</span>
+								<input type="text" name="author">
+							</label>
+						</div>
+						
+						<div class="form-row">
+							<label>
+								<span>Category:</span>
+								<input type="text" name="category">
+							</label>
+						</div>
+
+						<div class="form-row">
+							<label>
+								<span>Copies:</span>
+								<input type="email" name="copies">
+							</label>
+						</div>
+
+						<div class="form-row">
+							<label>
+								<span>Loan Limit:</span>
+								<input type="password" name="loanlimit">
+							</label>
+						</div>
+
+						<div class="form-row">
+							<button type="submit">Add Book</button>
+						</div>
+
+					</div>
+
+
+				</div>
+
+			</form>
+
+		</div>
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
