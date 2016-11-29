@@ -1,3 +1,7 @@
+// Author: Gary McHugh
+// Date: November 28th, 2016
+// Adapted from: http://blog.narenarya.in/build-rest-api-go-mysql.html
+
 package main
 
 import (
