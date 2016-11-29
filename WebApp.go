@@ -6,15 +6,6 @@ package main
 
 import "gopkg.in/macaron.v1"
 
-// Function taken from: github.com/golang/example
-func reverse(s string) string {
-	r := []rune(s)
-	for i, j := 0, len(r)-1; i < len(r)/2; i, j = i+1, j-1 {
-		r[i], r[j] = r[j], r[i]
-	}
-	return string(r)
-}
-
 func main() {
 	m := macaron.Classic()
 	m.Use(macaron.Renderer())
@@ -112,12 +103,6 @@ func main() {
 
 	m.Get("/signIn", func(tx *macaron.Context) {
 		tx.HTML(200, "signIn")
-	})
-
-	m.Get("/reverse/:name", func(ctx *macaron.Context) {
-		// Adapted from: https://go-macaron.com/docs/middlewares/templating
-		ctx.Data["Name"] = reverse(ctx.Params(":name"))
-		ctx.HTML(200, "hello")
 	})
 
 	m.Run(4001)
