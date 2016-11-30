@@ -17,9 +17,9 @@ This is the repository for our group project in Emerging Technologies. It is a g
 ### Prerequisites
 + SET GOPATH=C:/Users/garym/EmergingTechProject
 + Download the following packages in the comand line
- +Macaroon (go get gopkg.in/macaron.v1)
- +Gin Web Framework (go get github.com/gin-gonic/gin)
- +Go-MySQL-Driver (go get github.com/go-sql-driver/mysql)
+++ Macaroon (go get gopkg.in/macaron.v1)
+++ Gin Web Framework (go get github.com/gin-gonic/gin)
+++ Go-MySQL-Driver (go get github.com/go-sql-driver/mysql)
  
 
 
