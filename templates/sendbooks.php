@@ -1,3 +1,9 @@
+<!--
+Author: Gary McHugh
+Date: November 29th, 2016
+Adapted from: http://www.tutorialrepublic.com/php-tutorial/php-mysql-insert-query.php
+-->
+
 <?php
 /* Attempt MySQL server connection. Assuming you are running MySQL
 server with default setting (user 'root' with no password) */
