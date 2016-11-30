@@ -60,7 +60,7 @@ Library Page Screen Shot.
 <img src="/public/Images/Webappscreen.png" alt="Library" width="900" height="600"/>
 
 ## How to use this site
-To navaigate through or website you will use the nav bar at the top of the page. This nav bar will bring you anywhere in our website.
+To navaigate through our website you will use the nav bar at the top of the page. This nav bar will bring you anywhere in our website.
 
 <img src="/public/Images/navBar.png" alt="Nav" width="1000" height="150"/>
 
@@ -74,7 +74,7 @@ On the home page is a carosel with links to library resources such as timtables,
 
 + Book a Room
 
-A page which alows uses to book a room in the library.
+A page which alows users to book a room in the library.
 
 <img src="/public/Images/bookaroom.png" alt="bookaroom" width="900" height="300"/>
 
@@ -86,7 +86,7 @@ A page consisting of information about the library such as staff information and
 
 + Opening Hours
 
-A page with tables of what day each library is open and betwwen what time
+A page with tables of what day each library is open and between what time
 
 <img src="/public/Images/openhours.png" alt="open" width="900" height="300"/>
 
@@ -104,7 +104,7 @@ A drop down menu allowing users to select a category of books and display a tabl
 
 + Sign in button
 
-A button whihc activates a modal containg a form which would allow users to enter there details.
+A button whihc activates a modal containg a form which would allow users to enter their details.
 
 <img src="/public/Images/signinmodal.png" alt="modal" width="900" height="300"/>
 
@@ -130,7 +130,7 @@ To see the info in the database run server.go in the command line with the follo
 
 Server.go Screen Shot.
 
-<img src="/public/Images/server.png" alt="Server" width="1000" height="150"/>
+<img src="/public/Images/server.png" alt="Server" width="1000" height="300"/>
 
 ## Documention
 We have extensive documentation on everything we set out to do in our project. It can all be found and read in the documentation folder in this repostory.
