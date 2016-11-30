@@ -29,6 +29,19 @@ This is the repository for our group project in Emerging Technologies. It is a g
 + To access webpage.go to http://127.0.0.1:4001/
 
 
+
+Library Page Screen Shot.
+
+<img src="/public/Images/Webappscreen.png" alt="Library" width="600" height="600"/>
+
+Server.go Screen Shot.
+
+<img src="/public/Images/server.png" alt="Server" width="600" height="600"/>
+
+## How to use this site
+To navaigate through or website you will use the nav bar at the top of the page. This nav bar will bring you anywhere in our website.
+
+<img src="/public/Images/navBar.png" alt="Nav" width="600" height="600"/>
  
 
 
